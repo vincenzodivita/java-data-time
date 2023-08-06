@@ -7,7 +7,7 @@ public class Main {
         LocalDateTime dateAndTime = LocalDateTime.now(); 
 
         DateTimeFormatter formattedDate = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        DateTimeFormatter formattedTime = DateTimeFormatter.ofPattern("HH:mm:ss");
+        DateTimeFormatter formattedTime = DateTimeFormatter.ofPattern("HH:mm");
         DateTimeFormatter formattedDay = DateTimeFormatter.ofPattern("EEEE");
 
         System.out.println(dateAndTime.format(formattedDate));
