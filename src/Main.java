@@ -6,12 +6,12 @@ public class Main {
 
         LocalDateTime dateAndTime = LocalDateTime.now(); 
 
-        DateTimeFormatter formattedDate = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        DateTimeFormatter formattedDate = DateTimeFormatter.ofPattern("dd MMMM yyyy");
         DateTimeFormatter formattedTime = DateTimeFormatter.ofPattern("HH:mm");
         DateTimeFormatter formattedDay = DateTimeFormatter.ofPattern("EEEE");
 
-        System.out.println(dateAndTime.format(formattedDate));
         System.out.println(dateAndTime.format(formattedDay));
+        System.out.println(dateAndTime.format(formattedDate));
         System.out.println(dateAndTime.format(formattedTime));
     }
 }
