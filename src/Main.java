@@ -4,11 +4,11 @@ import java.time.format.DateTimeFormatter;
 public class Main {
     public static void main(String[] args) {
 
-        LocalDateTime date = LocalDateTime.now(); 
+        LocalDateTime dateAndTime = LocalDateTime.now(); 
 
-        DateTimeFormatter formattedDate = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+        DateTimeFormatter formattedDateAndTime = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 
-        System.out.println(date.format(formattedDate));
+        System.out.println(dateAndTime.format(formattedDateAndTime));
         
     }
 }
